@@ -1,0 +1,75 @@
+.container{
+    max-width: 100%;
+    padding: 2rem;
+    background: linear-gradient(45deg,rgb(6, 32, 225),rgb(107, 215, 107),rgb(237, 107, 7));
+    border-radius: 2rem;
+    display: flex;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+    grid-gap: 2rem;
+    
+}
+
+.card{
+    background: rgb(38, 37, 37);
+    color: rgb(255, 255, 255);
+    padding: 2.5rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    
+}
+
+.large{
+    font-family: fantasy, sans-serif;
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+    color: rgb(29, 29, 29);
+    transform: translateX(10rem);
+    transition: transform 1s;
+}
+
+.small{
+    margin-bottom: 0.5rem;
+}
+
+.discription{
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.arrow{
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-left: auto;
+    color: aqua;
+
+}
+
+.card:hover .arrow{
+    background-color: rgb(94, 96, 95);
+}
+
+.card:hover .large{
+    transform: translateX(5%);
+    color: white;
+}
+
+.card.twitter:hover{
+    background-color: rgb(29, 161, 242);
+}
+.card.facebook:hover{
+    background-color: rgb(66, 103, 178);
+}
+.card.youtube:hover{
+    background-color: rgb(255, 7, 79);
+}
+.card.instagram:hover{
+    background: radial-gradient(at 20% 128%,rgb(254, 218, 120 ) 20%,rgb(226, 52, 103) 60%,rgb(172, 43, 179) 90%);
+}
